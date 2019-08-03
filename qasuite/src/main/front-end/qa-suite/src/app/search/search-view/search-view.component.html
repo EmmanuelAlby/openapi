@@ -1,0 +1,40 @@
+<br>
+<br>
+
+<div style="height: 100%;width: auto;background: rgba(111, 109, 109, 0.2);margin-left: 0px;">
+	<div class="leftmenu">
+		<app-left-menu></app-left-menu>
+	</div>
+	<form [formGroup]="profileForm">
+	<div class="rightmenu">
+		<br>
+		<br>
+		<table ><tr ><td class="textStyle">
+		Project Name  :</td>
+		<td>
+		<select formControlName="project" class="styled-select blue semi-square">
+				<option>SELECT PROJECT</option>
+			<option>DSAR</option>
+			<option>STOPPERS</option>
+			<option>IDAMS</option>
+			<option>EQUIP</option>
+		</select>
+		</td></tr>
+		<br>
+		<tr><td class="textStyle" style="float:right">
+		Browser     :</td>
+		<td> 
+			<select formControlName="browser" class="styled-select blue semi-square">
+				<option>SELECT BROWSER</option>
+				<option>CHROME</option>
+				<option>EDGE</option>
+				<option>INTERNET EXPLORER</option>
+			</select>
+			</td></tr>
+			</table>
+			<br>
+			<input type="button" class="submitButton" value="SUBMIT" (click)="triggerJob()"> 
+	</div>
+	</form>
+</div>
+	
